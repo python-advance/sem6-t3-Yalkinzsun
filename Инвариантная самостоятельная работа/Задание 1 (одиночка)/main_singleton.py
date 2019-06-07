@@ -50,7 +50,7 @@ class CurrencyBoard:
 
     def check(self):
         if time.time() - self.timesaver > 300:
-            self.update()
+            return self.update()
         else:
             print('Последенее обновление было меньше 5 минут назад!')
 
